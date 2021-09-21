@@ -12,8 +12,8 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 
 
 version = "1.0"
-group = "top.hkyzf.hello" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "firstmod"
+group = "top.hkyzf.neutrino" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "neutrino"
 
 sourceCompatibility = targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 compileJava {
@@ -75,4 +75,9 @@ processResources {
     from(sourceSets.main.resources.srcDirs) {
         exclude 'mcmod.info'
     }
+}
+
+// 指定编码为 UTF-8
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
 }

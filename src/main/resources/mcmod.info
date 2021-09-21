@@ -1,16 +1,16 @@
 [
-{
-  "modid": "firstmod",
-  "name": "First Mod",
-  "description": "My First 1.12.2 Mod!",
-  "version": "${version}",
-  "mcversion": "${mcversion}",
-  "url": "https://blog.hkyzf.top",
-  "updateUrl": "",
-  "authorList": ["ZhuFeng"],
-  "credits": "What's the date today?",
-  "logoFile": "",
-  "screenshots": [],
-  "dependencies": []
-}
+    {
+        "modid": "neutrino",
+        "name": "Neutrino",
+        "description": "My First 1.12.2 Mod!",
+        "version": "${version}",
+        "mcversion": "${mcversion}",
+        "url": "https://blog.hkyzf.top",
+        "updateUrl": "",
+        "authorList": ["ZhuFeng"],
+        "credits": "What's the date today?",
+        "logoFile": "",
+        "screenshots": [],
+        "dependencies": []
+    }
 ]
