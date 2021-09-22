@@ -1,7 +1,6 @@
 package top.hkyzf.neutrino.creativetab;
 
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import top.hkyzf.neutrino.ItemInitializer;
 
@@ -13,6 +12,11 @@ import top.hkyzf.neutrino.ItemInitializer;
  */
 public class NeutrinoCreativeTabs extends CreativeTabs {
 
+    /**
+     * 创造模式物品栏
+     */
+    public static final CreativeTabs NEUTRINO_CREATIVE_TAB = new NeutrinoCreativeTabs();
+
     public NeutrinoCreativeTabs() {
         super("neutrino");
         // src/main/resources/assets/minecraft/textures/gui/container/creative_inventory/tab_fmltutor.png
@@ -21,7 +25,7 @@ public class NeutrinoCreativeTabs extends CreativeTabs {
 
     @Override
     public ItemStack createIcon() {
-        return new ItemStack(ItemInitializer.goldenEgg);
+        return new ItemStack(ItemInitializer.GOLDEN_EGG);
     }
 
     /**

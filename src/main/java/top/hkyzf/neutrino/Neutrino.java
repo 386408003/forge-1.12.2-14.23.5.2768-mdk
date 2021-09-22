@@ -1,12 +1,10 @@
 package top.hkyzf.neutrino;
 
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.Logger;
-import top.hkyzf.neutrino.creativetab.NeutrinoCreativeTabs;
 
 /**
  * Mod 主类的标记。其中只有 modid 是必填项。
@@ -48,11 +46,6 @@ public class Neutrino {
      */
     @Mod.Instance(Neutrino.MODID)
     public static Neutrino instance;
-
-    /**
-     * 创造模式物品栏
-     */
-    public static final CreativeTabs NEUTRINO_CREATIVE_TAB = new NeutrinoCreativeTabs();
 
     /**
      * 获取 Mod 日志记录器

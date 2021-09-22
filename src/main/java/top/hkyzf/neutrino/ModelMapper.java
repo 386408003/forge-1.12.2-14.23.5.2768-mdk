@@ -7,6 +7,8 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 
+import java.util.Objects;
+
 /**
  * 模型注册器
  * @author zhufeng
@@ -18,10 +20,10 @@ public final class ModelMapper {
     @SubscribeEvent
     public static void onModelReg(ModelRegistryEvent event) {
         // 注册金蛋模型
-        ModelLoader.setCustomModelResourceLocation(ItemInitializer.goldenEgg, 0,
-                new ModelResourceLocation(ItemInitializer.goldenEgg.getRegistryName(), "inventory"));
+        ModelLoader.setCustomModelResourceLocation(ItemInitializer.GOLDEN_EGG, 0,
+                new ModelResourceLocation(Objects.requireNonNull(ItemInitializer.GOLDEN_EGG.getRegistryName()), "inventory"));
         // 注册黑曜石锭模型
-        ModelLoader.setCustomModelResourceLocation(ItemInitializer.obsidianIngot, 0,
-                new ModelResourceLocation(ItemInitializer.obsidianIngot.getRegistryName(), "inventory"));
+        ModelLoader.setCustomModelResourceLocation(ItemInitializer.OBSIDIAN_INGOT, 0,
+                new ModelResourceLocation(Objects.requireNonNull(ItemInitializer.OBSIDIAN_INGOT.getRegistryName()), "inventory"));
     }
 }

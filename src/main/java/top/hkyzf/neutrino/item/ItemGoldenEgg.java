@@ -2,6 +2,7 @@ package top.hkyzf.neutrino.item;
 
 import net.minecraft.item.Item;
 import top.hkyzf.neutrino.Neutrino;
+import top.hkyzf.neutrino.creativetab.NeutrinoCreativeTabs;
 
 /**
  * 金蛋
@@ -15,6 +16,6 @@ public class ItemGoldenEgg extends Item {
         super();
         this.setRegistryName("golden_egg")
                 .setTranslationKey(Neutrino.MODID + ".golden_egg")
-                .setCreativeTab(Neutrino.NEUTRINO_CREATIVE_TAB);
+                .setCreativeTab(NeutrinoCreativeTabs.NEUTRINO_CREATIVE_TAB);
     }
 }

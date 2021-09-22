@@ -2,6 +2,7 @@ package top.hkyzf.neutrino.item;
 
 import net.minecraft.item.Item;
 import top.hkyzf.neutrino.Neutrino;
+import top.hkyzf.neutrino.creativetab.NeutrinoCreativeTabs;
 
 /**
  * 黑曜石锭
@@ -15,6 +16,6 @@ public class ItemObsidianIngot extends Item {
         super();
         this.setRegistryName("obsidian_ingot")
                 .setTranslationKey(Neutrino.MODID + ".obsidian_ingot")
-                .setCreativeTab(Neutrino.NEUTRINO_CREATIVE_TAB);
+                .setCreativeTab(NeutrinoCreativeTabs.NEUTRINO_CREATIVE_TAB);
     }
 }
