@@ -1,3 +1,6 @@
 item.neutrino.golden_egg.name=金蛋
 item.neutrino.obsidian_ingot.name=黑曜石锭
+item.neutrino.obsidian_apple.name=黑曜石苹果
+
 itemGroup.neutrino=吊炸天
+enchantment.neutrino.fire_burn=火焰灼烧

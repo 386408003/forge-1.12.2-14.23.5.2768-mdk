@@ -1,4 +1,4 @@
-package top.hkyzf.neutrino;
+package top.hkyzf.neutrino.init;
 
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -6,6 +6,7 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
+import top.hkyzf.neutrino.Neutrino;
 
 import java.util.Objects;
 
@@ -25,5 +26,8 @@ public final class ModelMapper {
         // 注册黑曜石锭模型
         ModelLoader.setCustomModelResourceLocation(ItemInitializer.OBSIDIAN_INGOT, 0,
                 new ModelResourceLocation(Objects.requireNonNull(ItemInitializer.OBSIDIAN_INGOT.getRegistryName()), "inventory"));
+        // 注册黑曜石苹果模型
+        ModelLoader.setCustomModelResourceLocation(ItemInitializer.OBSIDIAN_APPLE, 0,
+                new ModelResourceLocation(Objects.requireNonNull(ItemInitializer.OBSIDIAN_APPLE.getRegistryName()), "inventory"));
     }
 }

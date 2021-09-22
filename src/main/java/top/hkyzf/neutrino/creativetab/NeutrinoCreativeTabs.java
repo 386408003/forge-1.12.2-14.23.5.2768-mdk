@@ -2,7 +2,7 @@ package top.hkyzf.neutrino.creativetab;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
-import top.hkyzf.neutrino.ItemInitializer;
+import top.hkyzf.neutrino.init.ItemInitializer;
 
 /**
  * 新的创造模式物品栏
